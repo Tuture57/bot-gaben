@@ -11,11 +11,11 @@ client.on('ready', () => {
 
 var bot = require("discord-music-bot");
  
-var serverName = "Your server name here";
-var textChannelName = "Your text channel name here (without #)";
-var voiceChannelName = "Your voice channel name here";
-var aliasesFile = "A file the bot will use to store your aliases";
-var botToken = "Your bot token here";
+var serverName = "BOT TEST";
+var textChannelName = "général";
+var voiceChannelName = "test";
+var aliasesFile = "bot-gaben";
+var botToken = (process.env.TOKEN);
  
 bot.run(serverName, textChannelName, voiceChannelName, aliasesFile, botToken);
 })
