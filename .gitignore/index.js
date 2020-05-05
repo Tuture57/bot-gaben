@@ -1,34 +1,18 @@
-const { Client } = require("discord.js");
-const { config } = require("dotenv");
-
-// Declares our bot,
-// the disableEveryone prevents the client to ping @everyone
-const client = new Client({
-    disableEveryone: true
-});
-
-config({
-    path: __dirname + "/.env"
-})
-
-// When the bot's online, what's in these brackets will be executed
+const Discord = require("discord.js");
+const client = new Discord.Client();
+var prefix = "$";
+// 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 client.on("ready", () => {
-    console.log(`Hi, ${client.user.username} is now online!`);
-
-    // Set the user presence
-    client.user.setPresence({
-        status: "online",
-        game: {
-            name: "me getting developed",
-            type: "WATCHING"
-        }
-    }); 
+  console.log(`Logged in as ${client.user.tag}!`)
+  console.log("Le bot a bien démarré !!!")
 })
-
-// When a message comes in, what's in these brackets will be executed
-client.on("message", async message => {
-    console.log(`${message.author.username} said: ${message.content}`);
-});
-
-// Login the bot
-client.login(process.env.TOKEN);
+// 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+client.on("message", msg => {
+  if (msg.content === "ping") {
+    msg.reply("pong")
+  }
+// 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  client.user.setActivity("ouvrir des caisses", {type: "PLAYING"})
+//0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+})
+client.login("Njk3MzkwNjMyNTIzNjYxMzY2.XrGPiw.ThkPgVFquyQhNJU6cB1WUDUS6GU")
