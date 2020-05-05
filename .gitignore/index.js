@@ -15,4 +15,4 @@ client.on("message", msg => {
   client.user.setActivity("ouvrir des caisses", {type: "PLAYING"})
 //0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 })
-client.login("Njk3MzkwNjMyNTIzNjYxMzY2.XrGPiw.ThkPgVFquyQhNJU6cB1WUDUS6GU")
+client.login("process.env.TOKEN")
