@@ -7,7 +7,7 @@ client.on("ready", () => {
 console.log("Le bot a bien démarré !")
 client.on('ready', () => {
     
-  client.user.setActivity("twitch.tv/tuturetv", {type: "WATCHING"})
+  client.user.setActivity("twitch.tv/roknar", {type: "WATCHING"})
 
     client.on("message", msg => {
       if (msg.content === "ping") {
