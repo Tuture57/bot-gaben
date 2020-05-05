@@ -9,8 +9,6 @@ client.on('ready', () => {
     
     client.user.setActivity("ouvrir des caisses", {type: "PLAYING"})
 
-})
-
 var bot = require("discord-music-bot");
  
 var serverName = "Your server name here";
@@ -20,4 +18,4 @@ var aliasesFile = "A file the bot will use to store your aliases";
 var botToken = "Your bot token here";
  
 bot.run(serverName, textChannelName, voiceChannelName, aliasesFile, botToken);
-}
+})
