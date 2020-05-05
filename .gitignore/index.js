@@ -134,4 +134,4 @@ function playSong(guild, song) {
 }
  
  
-bot.login(config.token);
+bot.login(process.env.TOKEN);
