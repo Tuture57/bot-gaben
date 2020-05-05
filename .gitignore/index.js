@@ -6,7 +6,7 @@ client.on("ready", () => {
   console.log("Le bot a bien démarré !!!")
 })
 client.on
-client.user.setActivity("www.twitch.tv/tuturetv", {type: "WATCHING"})
+client.user.setActivity("twitch.tv/tuturetv", {type: "WATCHING"})
 ("message", msg => {
   if (msg.content === "ping") {
     msg.reply("pong")
