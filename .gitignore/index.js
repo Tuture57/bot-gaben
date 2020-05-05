@@ -9,6 +9,6 @@ client.on("message", msg => {
   if (msg.content === "ping") {
     msg.reply("pong")
   }
-  client.user.setActivity("ouvrir des caisses", {type: "PLAYING"})
+  client.user.setActivity("www.twitch.tv/tuturetv", {type: "WATCHING"})
 })
 client.login(process.env.TOKEN)
