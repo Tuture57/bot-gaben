@@ -11,4 +11,4 @@ client.on("message", msg => {
   }
   client.user.setActivity("ouvrir des caisses", {type: "PLAYING"})
 })
-client.login("process.env.TOKEN")
+client.login(process.env.TOKEN)
