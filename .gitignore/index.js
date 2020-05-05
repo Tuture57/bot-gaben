@@ -5,10 +5,11 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
   console.log("Le bot a bien démarré !!!")
 })
-client.on("message", msg => {
+client.on
+client.user.setActivity("www.twitch.tv/tuturetv", {type: "WATCHING"})
+("message", msg => {
   if (msg.content === "ping") {
     msg.reply("pong")
   }
-  client.user.setActivity("www.twitch.tv/tuturetv", {type: "WATCHING"})
 })
 client.login(process.env.TOKEN)
