@@ -7,6 +7,6 @@ client.on("ready", () => {
 console.log("SA MARCHE !!!")
 client.on('ready', () => {
     
-    client.user.setActivity("ouvrir des caisses", {type: "PLAYING"})
+    client.user.setActivity("sucer son concepteur", {type: "PLAYING"})
 
 })
