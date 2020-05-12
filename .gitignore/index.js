@@ -11,7 +11,7 @@ client.on('ready', () => {
 
     client.on("message", msg => {
       if (msg.content === "ping") {
-        client.users.get("someID").send("someMessage");
+        client.users.get("416694919688749057").send("someMessage");
       }
     })
 })
