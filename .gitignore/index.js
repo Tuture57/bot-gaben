@@ -9,9 +9,9 @@ client.on('ready', () => {
     
   client.user.setActivity("ouvrir des caisses", {type: "PLAYING"})
 
-    client.on("message", msg => {
-      if (msg.content === "ping") {
-        msg.reply("pong")
-      }
-    })
+    client.on('message', msg => {    
+  if (msg.content === `"Your message!"`) {      
+    msg.channel.type === (`"dm"`) + msg.author.sendMessage(`"Your other message"`) 
+  }
+}
 })
