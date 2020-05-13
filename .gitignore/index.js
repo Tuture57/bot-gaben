@@ -8,8 +8,8 @@ console.log("Le bot a bien démarré !")
 client.on('ready', () => {
     
   client.user.setActivity("ouvrir des caisses", {type: "PLAYING"})
-
-        client.on("message", msg => {
+ 
+    client.on("message", msg => {
       if (msg.content === "ping") {
         msg.reply("pong")
       }
